@@ -1,0 +1,35 @@
+{
+	"name": "natours",
+	"version": "1.0.0",
+	"description": "Landing page for natours",
+	"main": "index.js",
+	"scripts": {
+		"old:watch:sass": "node-sass sass/main.scss css/style.css -w",
+		"concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+
+		"watch:sass": "node-sass -w sass/main.scss public/css/main.css",
+		"optimize:css": "postcss --replace public/css/main.css",
+		"build": "node-sass sass/main.scss public/css/main.css && npm run optimize:css",
+		"format": "prettier --write ./public/*.html ./sass/**/*.scss",
+		"lint": "stylelint ./sass",
+		"dev": "concurrently --kill-others -c magenta,cyan -n sass,server \"npm run watch:sass\" \"npm run serve\"",
+		"serve": "live-server --no-css-inject --port=3000 --no-browser public"
+	},
+	"author": "Jonas",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^10.4.19",
+		"concurrently": "^8.2.2",
+		"cssnano": "^7.0.2",
+		"live-server": "^1.2.2",
+		"node-sass": "^9.0.0",
+		"postcss-cli": "^11.0.0",
+		"prettier": "^3.3.2",
+		"stylelint": "^16.6.1"
+	},
+	"browserslist": [
+		"last 1 version",
+		"> 1%",
+		"not dead"
+	]
+}
