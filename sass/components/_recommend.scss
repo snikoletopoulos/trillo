@@ -9,6 +9,7 @@
 	}
 
 	&__friends {
+		display: flex;
 	}
 
 	&__photo {
@@ -19,7 +20,7 @@
 		border: 3px solid #fff;
 
 		&:not(:last-child) {
-			margin-right: -1.5rem;
+			margin-right: -2rem;
 		}
 	}
 }
