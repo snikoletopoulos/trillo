@@ -11,3 +11,7 @@ body {
 	background-repeat: no-repeat;
 	min-height: 100vh;
 }
+
+.paragraph:not(:last-of-type) {
+	margin-bottom: 2rem;
+}

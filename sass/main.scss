@@ -4,11 +4,15 @@
 
 @import "components/button";
 @import "components/gallery";
+@import "components/list";
 @import "components/logo";
+@import "components/recommend";
+@import "components/review";
 @import "components/search";
 @import "components/side-nav";
 @import "components/user-nav";
 
+@import "layout/detail";
 @import "layout/header";
 @import "layout/overview";
 @import "layout/sidebar";
