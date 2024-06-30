@@ -52,8 +52,10 @@
 	}
 
 	&__icon {
-		height: 2rem;
-		width: 2rem;
+		height: 4rem;
+		width: 4rem;
 		fill: var(--color-grey-dark-3);
+		padding: 1rem;
+		margin: -1rem;
 	}
 }
